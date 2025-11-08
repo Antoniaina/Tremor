@@ -129,6 +129,19 @@ tremor/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tremor.dir/build.make CMakeFiles/tremor.dir/build
 .PHONY : tremor/fast
 
+#=============================================================================
+# Target rules for targets named list_nodes
+
+# Build rule for target.
+list_nodes: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 list_nodes
+.PHONY : list_nodes
+
+# fast build rule for target.
+list_nodes/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/list_nodes.dir/build.make CMakeFiles/list_nodes.dir/build
+.PHONY : list_nodes/fast
+
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
 
@@ -153,6 +166,30 @@ src/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tremor.dir/build.make CMakeFiles/tremor.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
+src/pipewireListNodes.o: src/pipewireListNodes.cpp.o
+.PHONY : src/pipewireListNodes.o
+
+# target to build an object file
+src/pipewireListNodes.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/list_nodes.dir/build.make CMakeFiles/list_nodes.dir/src/pipewireListNodes.cpp.o
+.PHONY : src/pipewireListNodes.cpp.o
+
+src/pipewireListNodes.i: src/pipewireListNodes.cpp.i
+.PHONY : src/pipewireListNodes.i
+
+# target to preprocess a source file
+src/pipewireListNodes.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/list_nodes.dir/build.make CMakeFiles/list_nodes.dir/src/pipewireListNodes.cpp.i
+.PHONY : src/pipewireListNodes.cpp.i
+
+src/pipewireListNodes.s: src/pipewireListNodes.cpp.s
+.PHONY : src/pipewireListNodes.s
+
+# target to generate assembly for a file
+src/pipewireListNodes.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/list_nodes.dir/build.make CMakeFiles/list_nodes.dir/src/pipewireListNodes.cpp.s
+.PHONY : src/pipewireListNodes.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -161,10 +198,14 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... list_nodes"
 	@echo "... tremor"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
+	@echo "... src/pipewireListNodes.o"
+	@echo "... src/pipewireListNodes.i"
+	@echo "... src/pipewireListNodes.s"
 .PHONY : help
 
 

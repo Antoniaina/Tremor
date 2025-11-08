@@ -16,5 +16,9 @@ add_executable(tremor
     src/main.cpp
 )
 
-target_link_libraries(tremor ${PIPEWIRE_LIBRARIES})
+add_executable(list_nodes
+  src/pipewireListNodes.cpp
+)
 
+target_link_libraries(tremor ${PIPEWIRE_LIBRARIES})
+target_link_libraries(list_nodes ${PIPEWIRE_LIBRARIES})
