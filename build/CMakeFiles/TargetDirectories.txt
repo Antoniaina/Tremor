@@ -1,0 +1,3 @@
+/media/antoni/DATA/Proj/Tremor/build/CMakeFiles/tremor.dir
+/media/antoni/DATA/Proj/Tremor/build/CMakeFiles/edit_cache.dir
+/media/antoni/DATA/Proj/Tremor/build/CMakeFiles/rebuild_cache.dir

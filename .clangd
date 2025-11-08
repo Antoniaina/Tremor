@@ -1,0 +1,2 @@
+CompileFlags:
+  Add: ["-I/usr/include/pipewire-0.3", "-lpipewire-0.3"]
