@@ -1,1 +1,0 @@
-/usr/bin/c++ -g -Wl,--dependency-file=CMakeFiles/tremor.dir/link.d CMakeFiles/tremor.dir/src/main.cpp.o -o tremor  -lpipewire-0.3
